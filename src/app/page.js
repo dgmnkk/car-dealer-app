@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold mb-6">Car Filter</h1>
+      <h1 className="text-3xl text-blue-500 font-bold mb-6">Car Filter</h1>
 
       <div className="mb-4">
         <label htmlFor="makes" className="block mb-2">Select Car Make:</label>
@@ -27,7 +27,7 @@ export default function Home() {
           id="makes"
           value={selectedMakeId}
           onChange={(e) => setSelectedMakeId(e.target.value)}
-          className="border border-gray-300 rounded p-2 w-64"
+          className="border border-blue-300 rounded p-2 w-64"
         >
           <option value="">Select Make</option>
           {makes.map((make) => (
@@ -44,7 +44,7 @@ export default function Home() {
           id="years"
           value={selectedYear}
           onChange={(e) => setSelectedYear(e.target.value)}
-          className="border border-gray-300 rounded p-2 w-64"
+          className="border border-blue-300 rounded p-2 w-64"
         >
           <option value="">Select Year</option>
           {years.map((year) => (
